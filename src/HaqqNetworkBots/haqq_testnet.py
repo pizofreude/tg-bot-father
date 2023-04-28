@@ -22,9 +22,21 @@
 import time
 import requests
 
-TOKEN = "your_bot_token_here"
-CHAT_ID = "your_group_chat_id_here"
-MESSAGE = "!faucet your_haqq_public_address_here"
+# TOKEN = "your_bot_token_here"
+# CHAT_ID = "your_group_chat_id_here"
+# MESSAGE = "!faucet haqq_public_address_here"
+
+# Create 3 files via touch BOT_TOKEN GROUP_CHAT_ID MESSAGE_TEXT and populate them accordingly.
+# Declare these 3 files in .gitignore to avoid pushing your sensitive information.
+with open('BOT_TOKEN', 'r') as f:
+    TOKEN = f.read().strip()
+
+with open('GROUP_CHAT_ID', 'r') as f:
+    CHAT_ID = f.read().strip()
+
+with open('MESSAGE_TEXT', 'r') as f:
+    MESSAGE = f.read().strip()
+
 
 def send_message(message):
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
