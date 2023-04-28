@@ -67,7 +67,7 @@ For example, if your bot's username is "@my_telegram_bot" and you want to send t
 @my_telegram_bot Hello World! Or anything really.
 ```
 
-Then, press Enter to send the message. Alternatively, you can create a file `MESSAGE_TEXT` via:
+Then, press Enter to send the message. Alternatively, in Python script you can create a file `MESSAGE_TEXT` via:
 
 ```bash
 touch MESSAGE_TEXT
@@ -88,7 +88,7 @@ You can get the group chat ID manually by following these steps:
 
 * Open the group chat you want to get the ID for.
 
-* Send any message in the group chat.
+* Send any message in the group chat using your bot.
 
 * Open your web browser and go to https://api.telegram.org/bot<your_bot_token_here>/getUpdates, replacing <your_bot_token_here> with your actual bot token.
 
