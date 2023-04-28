@@ -64,7 +64,7 @@ To send a message to a Telegram group using your bot's username, you can use the
 For example, if your bot's username is "@my_telegram_bot" and you want to send the message "Hello World" to the group, you would type:
 
 ```css
-@my_telegram_bot !faucet 0x58e6f4ae9ea6e52a9baf08fee3cb031d54107080
+@my_telegram_bot Hello World! Or anything really.
 ```
 
 Then, press Enter to send the message. Alternatively, you can create a file `MESSAGE_TEXT` via:
