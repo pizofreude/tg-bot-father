@@ -52,6 +52,18 @@ If you have completed these steps correctly and still cannot find your bot in th
 
 If you are still having trouble finding your bot in the group, you can try removing it from the group and adding it again, or contact Telegram support for further assistance.
 
+### Python Script Runtime Error
+
+This commonly occured when running the python command in different directory as intended where the actual python scripts and its external dependencies are stored.
+
+The error message suggests that Python is unable to locate the haqq_testnet.py file in the given directory: C:\Users\UserName\OneDrive\desktop\My_Projects\Open_Source_Contribution\tg-bot-father.
+
+Make sure that the file is saved in the specified directory, and that the file name is correctly spelled. You can also try navigating to the directory using the command prompt and running the Python script from there to ensure that the file path is correct.
+
+Additionally, ensure that the external files BOT_TOKEN, GROUP_CHAT_ID, and MESSAGE_TEXT are present in the same directory as haqq_testnet.py and are named exactly as specified in the code.
+
+After all these have been taken care off, execute `python haqq_testnet.py` again in the terminal and everything should run as expected.
+
 ## First Time Using Bot to Send Message in TG Group
 
 To send a message to a Telegram group using your bot's username, you can use the following steps:
